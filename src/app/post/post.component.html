@@ -1,3 +1,21 @@
-<p>
-  post works!
-</p>
+<div class = "post-container">
+  <div class = "post" *ngFor = "let post of posts;">
+
+    <div class = "head">
+
+      <h1>
+          {{post.postAuthor}}
+      </h1>
+        
+      <span class = "love">
+          <i class = "fa fa-heart" [class.loved] = "post.isLoved" (click) = "addLove(post)"></i> {{post.postLove}}
+      </span>
+
+    </div>
+
+      <div class = "post-content">
+          {{ post.postContent }}
+      </div>
+
+    </div>
+

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Post } from './post.model';
 
 @Component({
   selector: 'app-post',
@@ -10,6 +11,25 @@ export class PostComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @Input() posts: Post[];
+
+  @Output() sendLove = new EventEmitter();
+
+
+  giveLove: Post;
+
+  addLove(post) {
+
+    if (post.isLoved == true) {
+
+    } else {
+    post.isLoved = true;
+    event.preventDefault();
+    post.postLove++;
+    this.sendLove.emit(post);
+    }
   }
 
 }

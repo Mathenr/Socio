@@ -5,3 +5,14 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700');
+
+/* Geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 96vw;
+}

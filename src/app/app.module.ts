@@ -13,7 +13,7 @@ import { PostComponent } from './post/post.component';
     AppComponent,
     HeaderComponent,
     TimelineComponent,
-    PostComponent
+    PostComponent,
   ],
   imports: [
     BrowserModule

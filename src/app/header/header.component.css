@@ -1,13 +1,11 @@
 header {
-    margin: 0 auto;
-    width: 96vw;
     height: 12vh;
-    box-sizing: border-box;
     vertical-align: middle;
     border-bottom: 1px #eee solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 7vh;
 }
 
 
