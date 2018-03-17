@@ -1,0 +1,45 @@
+header {
+    margin: 0 auto;
+    width: 96vw;
+    height: 12vh;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-bottom: 1px #eee solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header h1 {
+    font: 3em "IBM Plex Sans";
+    background: -webkit-linear-gradient(left, #18BFCC, #18A8CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-transform: lowercase;
+    display: inline;
+}
+
+header .welcome {
+    vertical-align: middle;
+    font: 0.95em "IBM Plex Sans";
+    text-transform: uppercase;
+    margin-left: 5vw;
+}
+
+header .user {
+    color: #18BFCC;
+    font-weight: 800;
+
+}
+
+header i {
+    width: 1.5em;
+    text-align: center;
+    line-height: 1.4em;
+    border: 2px #18BFCC solid;
+    border-radius: 0.75em; /* or 50% width & line-height */
+  }
+
+
