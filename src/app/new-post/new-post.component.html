@@ -1,0 +1,14 @@
+
+  <form #f = "ngForm">
+    <label for = "content"></label>
+    <input type = "text" class = "form-control" placeholder = "Nos conte o que te aflinge..." name = "content" [(ngModel)] = "postContent" required>
+
+    <label for = "name"></label>
+    <input type = "text" class = "form-control" placeholder = "Quem és tu?"  name = "postAuthor" name = "author" [(ngModel)] = "postAuthor" ngModel required>
+
+    <button (click) = "onSubmit($event)"> Postar! </button>
+    test: {{pp}}
+  </form>
+
+
+

@@ -1,11 +1,22 @@
 <header>
 
-  <h1> Socio </h1>
+  <a routerLink = "/" href  = "#"><h1> Socio </h1></a>
 
   <span>
 
-    <i class = "fa fa-globe" aria-hidden = "true" style = "color: #18BFCC; font-size: 1.5em; vertical-align: middle;"> </i>
-    <span class = "welcome"> Olá, <a href = "/" class = "user"> {{ user }} </a> </span>
+    <span routerLinkActive = "act">
+      <a routerLink = "/timeline" href = "#">
+        <i class = "fa fa-globe" aria-hidden = "true" style = "color: #18BFCC; font-size: 1.5em; vertical-align: middle;"></i>
+      </a>
+    </span>
+
+   <span routerLinkActive = "act">
+      <a routerLink = "/newpost" href = "#" routerLinkActive="active">
+        <i class = "fa fa-plus" aria-hidden = "true" style = "color: #18BFCC; font-size: 1.5em; vertical-align: middle;"></i>
+      </a>
+    </span>
+
+    <span class = "welcome"> Olá, <a href = "/" class = "user"> {{ user }} </a></span>
 
   </span>
 

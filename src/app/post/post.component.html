@@ -11,6 +11,8 @@
           <i class = "fa fa-heart" [class.loved] = "post.isLoved" (click) = "addLove(post)"></i> {{post.postLove}}
       </span>
 
+      <i class = "fa fa-trash trash" (click) = "deletePost(post)"></i> 
+
     </div>
 
       <div class = "post-content">
